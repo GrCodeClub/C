@@ -19,7 +19,7 @@
                             <li>usleep(useconds_t usec): Χρησιμοποιείται για να καθυστερήσει την εκτέλεση του προγράμματος για τον καθορισμένο αριθμό μικροδευτερολέπτων.</li>
                         </ol>
                     </p>
-                    <h3 class="highlight_black">fork() - Δημιουργία νέας διεργασίας (process)</h3>
+                    <h3 class="highlight">fork() - Δημιουργία νέας διεργασίας (process)</h3>
                     <p>Δημιουργεί ένα νέο διεργασίας-παιδί αντιγράφοντας την τρέχουσα διεργασία.</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-c">#include &lt;stdio.h>
@@ -42,7 +42,7 @@ int main() {
     return 0;
 }</code></pre></div></div>
  
-                    <h3 class="highlight_black">sleep() - Καθυστέρηση εκτέλεσης</h3>
+                    <h3 class="highlight">sleep() - Καθυστέρηση εκτέλεσης</h3>
                     <p>Χρησιμοποιείται για να καθυστερήσει την εκτέλεση του προγράμματος για τον καθορισμένο αριθμό δευτερολέπτων.</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-c">#include &lt;stdio.h>
@@ -54,7 +54,7 @@ int main() {
     return 0;
 }</code></pre></div></div>
 
-                    <h3 class="highlight_black">exec()</h3>
+                    <h3 class="highlight">exec()</h3>
                     <p>Η συνάρτηση exec() χρησιμοποιείται για να αντικαταστήσει το τρέχον πρόγραμμα με ένα άλλο πρόγραμμα. Υπάρχουν διάφορες εκδοχές της συνάρτησης exec(), όπως η execl(), η execv(), η execle() κ.ά., που διαφέρουν στον τρόπο που περνάνε τις παραμέτρους στο νέο πρόγραμμα.</p>
                     <p>Χρήσης της execl():</p>
                     <div class="bg_preview">
@@ -68,7 +68,7 @@ int main() {
     printf("Αυτό το μήνυμα δεν θα εκτυπωθεί αν η exec() αποτύχει\n");
     return 0;
 }</code></pre></div></div>
-                     <h3 class="highlight_black">Χρήσης της execvp() </h3>
+                     <h3 class="highlight">Χρήσης της execvp() </h3>
                      <p>Επιτρέπει την εκτέλεση ενός εξωτερικού προγράμματος χρησιμοποιώντας το όνομα του προγράμματος και σε λίστα τις παραμέτρους.</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-c">#include &lt;stdio.h>
@@ -84,7 +84,7 @@ int main() {
 
     return 0;
 }</code></pre></div></div>
-                    <h3 class="highlight_black">Χρήσης της execle()</h3>
+                    <h3 class="highlight">Χρήσης της execle()</h3>
                     <p>Η συνάρτηση execle() χρησιμοποιείται για την εκτέλεση ενός εξωτερικού προγράμματος και την παροχή περιβαλλοντικών μεταβλητών για την νέα διεργασία που θα δημιουργηθεί. Αυτό σας επιτρέπει να περνάτε προσαρμοσμένες μεταβλητές περιβάλλοντος για την εκτέλεση του προγράμματος.</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-c">#include &lt;stdio.h>
