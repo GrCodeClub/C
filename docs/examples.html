@@ -1,53 +1,50 @@
-<html>
-    <head>
-        <meta property="og:image" content="https://grcodeclub.github.io/files-page/preview/programming/c.png"/>
-        <meta property="og:title" content="Γλώσσα προγραμματισμού C | Παραδείγματα">
-        <script src="https://grcodeclub.github.io/js/add/data.js"></script>
-    </head>
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="https://grcodeclub.github.io/files-page/preview/programming/c.png"/>
+    <meta property="og:title" content="Γλώσσα προγραμματισμού C | Παραδείγματα">
+    <title>GrCode Club</title>
+    <script src="https://grcodeclub.gr/js/data.js"></script>
+</head>
+<body>
+    <div id="addHeader"></div>
+    <div class="container">
+        <h1 class="title">Παραδείγματα</h1>
 
-     <body>
-        <div class="container">
-            <div id="add_headder_and_menu"></div>
-            <div class="Text"> <!--Αρχή Κειμένου-->
-                <a href="./"><h1 id="back_page"></h1></a>
-                <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
-                    <h1 class="title">Παραδείγματα</h1>
+        <label style="margin-left: 10px;">Πίνακες</label>
+        <select id="code" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
+        font-size: 18px; outline: none; cursor: pointer;">
+            <option value="-">Διάλεξε αρχείο</option>
+            <option value="https://raw.githubusercontent.com/grcodeclub/c/main/table/%CE%94%CE%B7%CE%BC%CE%B9%CE%BF%CF%85%CF%81%CE%B3%CE%AF%CE%B1_%CE%BA%CE%B1%CE%B9_%CE%95%CE%BA%CF%84%CF%8D%CF%80%CF%89%CF%83%CE%B7.c">Δημιουργία και Εκτύπωση</option>
+            <option value="https://raw.githubusercontent.com/grcodeclub/c/main/table/max_min_%CE%B1%CF%81%CE%B9%CE%B8%CE%BC%CF%8C_%CF%83%CE%B5_%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%20_%CE%9D_%CE%B8%CE%AD%CF%83%CE%B5%CF%89%CE%BD">Max & Min αριθμό σε πίνακα  Ν θέσεων</option>
+        </select>
 
-                    <label style="margin-left: 10px;">Πίνακες</label>
-                    <select id="code" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
-                    font-size: 18px; outline: none; cursor: pointer;">
-                        <option value="-">Διάλεξε αρχείο</option>
-                        <option value="https://raw.githubusercontent.com/grcodeclub/c/main/table/%CE%94%CE%B7%CE%BC%CE%B9%CE%BF%CF%85%CF%81%CE%B3%CE%AF%CE%B1_%CE%BA%CE%B1%CE%B9_%CE%95%CE%BA%CF%84%CF%8D%CF%80%CF%89%CF%83%CE%B7.c">Δημιουργία και Εκτύπωση</option>
-                        <option value="https://raw.githubusercontent.com/grcodeclub/c/main/table/max_min_%CE%B1%CF%81%CE%B9%CE%B8%CE%BC%CF%8C_%CF%83%CE%B5_%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%20_%CE%9D_%CE%B8%CE%AD%CF%83%CE%B5%CF%89%CE%BD">Max & Min αριθμό σε πίνακα  Ν θέσεων</option>
-                    </select>
+        <br><br>
+        <label style="margin-left: 10px;">Μαθηματικα</label>
+        <select id="code1" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
+        font-size: 18px; outline: none; cursor: pointer;">
+            <option value="-">Διάλεξε αρχείο</option>
+            <option value="https://raw.githubusercontent.com/grcodeclub/c/main/math/n_%CF%80%CF%81%CF%8E%CF%84%CE%BF%CE%B9_%CE%B1%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CE%AF.c">N πρώτοι αριθμοί</option>
+            <option value="https://raw.githubusercontent.com/grcodeclub/c/main/math/%CE%9C%CE%AD%CE%B3%CE%B9%CF%83%CF%84%CE%BF%CF%82_%CE%BA%CE%BF%CE%B9%CE%BD%CF%8C%CF%82_%CE%B4%CE%B9%CE%B1%CE%B9%CF%81%CE%AD%CF%84%CE%B7%CF%82(%CE%91%CE%BB%CE%B3%CF%8C%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CF%82_Euclidean).c">Μέγιστος κοινός διαιρέτης(Αλγόριθμος Euclidean)</option>
+            <option value="https://raw.githubusercontent.com/grcodeclub/c/main/math/%CE%B4%CE%B5%CF%85%CF%84%CE%B5%CF%81%CE%BF%CE%B2%CE%AC%CE%B8%CE%BC%CE%B9%CE%B1_%CE%B5%CE%BE%CE%AF%CF%83%CF%89%CF%83%CE%B7.c">δευτεροβάθμια εξίσωση</option>
+            <option value="https://raw.githubusercontent.com/grcodeclub/c/main/math/%CF%80%CE%B1%CF%81%CE%B1%CE%B3%CE%BF%CE%BD%CF%84%CE%B9%CE%BA%CF%8C.c">Παραγοντικό</option>
 
-                    <br><br>
-                    <label style="margin-left: 10px;">Μαθηματικα</label>
-                    <select id="code1" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
-                    font-size: 18px; outline: none; cursor: pointer;">
-                        <option value="-">Διάλεξε αρχείο</option>
-                        <option value="https://raw.githubusercontent.com/grcodeclub/c/main/math/n_%CF%80%CF%81%CF%8E%CF%84%CE%BF%CE%B9_%CE%B1%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CE%AF.c">N πρώτοι αριθμοί</option>
-                        <option value="https://raw.githubusercontent.com/grcodeclub/c/main/math/%CE%9C%CE%AD%CE%B3%CE%B9%CF%83%CF%84%CE%BF%CF%82_%CE%BA%CE%BF%CE%B9%CE%BD%CF%8C%CF%82_%CE%B4%CE%B9%CE%B1%CE%B9%CF%81%CE%AD%CF%84%CE%B7%CF%82(%CE%91%CE%BB%CE%B3%CF%8C%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CF%82_Euclidean).c">Μέγιστος κοινός διαιρέτης(Αλγόριθμος Euclidean)</option>
-                        <option value="https://raw.githubusercontent.com/grcodeclub/c/main/math/%CE%B4%CE%B5%CF%85%CF%84%CE%B5%CF%81%CE%BF%CE%B2%CE%AC%CE%B8%CE%BC%CE%B9%CE%B1_%CE%B5%CE%BE%CE%AF%CF%83%CF%89%CF%83%CE%B7.c">δευτεροβάθμια εξίσωση</option>
-                        <option value="https://raw.githubusercontent.com/grcodeclub/c/main/math/%CF%80%CE%B1%CF%81%CE%B1%CE%B3%CE%BF%CE%BD%CF%84%CE%B9%CE%BA%CF%8C.c">Παραγοντικό</option>
-
-                    </select>
-                
-                    <br><br>
-                    <div class="bg_preview">
-                        <div class="appearance">
-                            <div class="space">
-                                <div class="buttons1"> </div>
-                                <div class="buttons2"> </div>
-                                <div class="buttons3"></div>
-                            </div>
-                            <div id="name"></div>
-                        </div>
-                        <div id="load">  </div>
-                    </div>
-            </div><!-- Τέλος Background Κειμένου-->
-            </div> <!--Τέλος Κειμένου-->
-        </div> <!--Τέλος container-->
-       <footer id="addFooter"></footer> <!-- Footer -->
-    </body>
+        </select>
+    
+        <br><br>
+        <div class="bg_preview">
+            <div class="appearance">
+                <div class="space">
+                    <div class="buttons1"> </div>
+                    <div class="buttons2"> </div>
+                    <div class="buttons3"></div>
+                </div>
+                <div id="name"></div>
+            </div>
+            <div id="load">  </div>
+        </div>
+    </div>
+    <div id="addFooter"></div>
+</body>
 </html>
