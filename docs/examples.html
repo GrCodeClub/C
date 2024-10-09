@@ -6,24 +6,31 @@
     <meta property="og:title" content="Γλώσσα προγραμματισμού C | Παραδείγματα">
     <title>GrCode Club</title>
     <script src="https://grcodeclub.gr/js/data.js"></script>
+    <style>
+        #code,#code1{
+            width: 100%;
+            background-color: rgb(211, 208, 208);
+            border-radius: 5px;
+            padding: 5px;
+            border-color: rgb(211, 208, 208);
+        }
+    </style>
 </head>
 <body>
     <div id="addHeader"></div>
     <div class="container">
         <h1 class="title">Παραδείγματα</h1>
 
-        <label style="margin-left: 10px;">Πίνακες</label>
-        <select id="code" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
-        font-size: 18px; outline: none; cursor: pointer;">
+        <label>Πίνακες</label>
+        <select id="code">
             <option value="-">Διάλεξε αρχείο</option>
             <option value="https://raw.githubusercontent.com/grcodeclub/c/main/table/%CE%94%CE%B7%CE%BC%CE%B9%CE%BF%CF%85%CF%81%CE%B3%CE%AF%CE%B1_%CE%BA%CE%B1%CE%B9_%CE%95%CE%BA%CF%84%CF%8D%CF%80%CF%89%CF%83%CE%B7.c">Δημιουργία και Εκτύπωση</option>
             <option value="https://raw.githubusercontent.com/grcodeclub/c/main/table/max_min_%CE%B1%CF%81%CE%B9%CE%B8%CE%BC%CF%8C_%CF%83%CE%B5_%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%20_%CE%9D_%CE%B8%CE%AD%CF%83%CE%B5%CF%89%CE%BD">Max & Min αριθμό σε πίνακα  Ν θέσεων</option>
         </select>
 
         <br><br>
-        <label style="margin-left: 10px;">Μαθηματικα</label>
-        <select id="code1" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
-        font-size: 18px; outline: none; cursor: pointer;">
+        <label>Μαθηματικα</label>
+        <select id="code1">
             <option value="-">Διάλεξε αρχείο</option>
             <option value="https://raw.githubusercontent.com/grcodeclub/c/main/math/n_%CF%80%CF%81%CF%8E%CF%84%CE%BF%CE%B9_%CE%B1%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CE%AF.c">N πρώτοι αριθμοί</option>
             <option value="https://raw.githubusercontent.com/grcodeclub/c/main/math/%CE%9C%CE%AD%CE%B3%CE%B9%CF%83%CF%84%CE%BF%CF%82_%CE%BA%CE%BF%CE%B9%CE%BD%CF%8C%CF%82_%CE%B4%CE%B9%CE%B1%CE%B9%CF%81%CE%AD%CF%84%CE%B7%CF%82(%CE%91%CE%BB%CE%B3%CF%8C%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CF%82_Euclidean).c">Μέγιστος κοινός διαιρέτης(Αλγόριθμος Euclidean)</option>
