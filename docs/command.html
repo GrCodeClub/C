@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="el">
 <head>
@@ -11,7 +12,10 @@
     <div id="addHeader"></div>
     <div class="container">
         <h1 class="title">Εντολές</h1>
-                
+        <p>Στην C, οι μεταβλητές είναι βασικά στοιχεία προγραμματισμού που χρησιμοποιούνται 
+            για να αποθηκεύουν δεδομένα σε μια συγκεκριμένη θέση μνήμης του υπολογιστή, τα 
+            οποία μπορούν να μεταβληθούν κατά τη διάρκεια της εκτέλεσης του προγράμματος. 
+            Κάθε μεταβλητή έχει ένα όνομα, έναν τύπο δεδομένων και μία τιμή.</p>
         <p class="highlight">Βασικές Δηλώσεις</p>
         <div class="bg_preview">
         <div  class="line-numbers"><pre class="code_editor"><code class="language-c">int age = 25;
@@ -21,7 +25,9 @@ char initial = 'A';
 char name[] = "John";</code></pre></div></div>
 
 
-        <p class="highlight">if</p>
+        <p class="highlight">Δομή ελέγχου</p>
+        <p>
+            Η εντολή <code>if</code> στην C (και σε πολλές άλλες γλώσσες προγραμματισμού) είναι μια δομή ελέγχου που επιτρέπει στο πρόγραμμα να εκτελέσει ένα συγκεκριμένο μπλοκ κώδικα μόνο εάν μια συνθήκη είναι αληθής (true).</p>
         <div class="bg_preview">
         <div  class="line-numbers"><pre class="code_editor"><code class="language-c">int number = 10;
 if (number > 5) {
@@ -30,44 +36,48 @@ printf("Ο αριθμός είναι μεγαλύτερος από 5.\n");
 printf("Ο αριθμός δεν είναι μεγαλύτερος από 5.\n");
 }</code></pre></div></div>
 
+    <p>Η εντολή <code>switch</code> στην C είναι μια δομή ελέγχου που χρησιμοποιείται για να διαχειρίζεται πολλαπλές συνθήκες με έναν οργανωμένο και εύχρηστο τρόπο. Είναι ιδιαίτερα χρήσιμη όταν χρειάζεται να ελεγχθεί η τιμή μιας μεταβλητής και να εκτελεστούν διαφορετικές ενέργειες ανάλογα με αυτήν την τιμή. </p>
+    <div class="bg_preview">
+    <div  class="line-numbers"><pre class="code_editor"><code class="language-c">int day = 3;
+switch (day) {
+    case 1:
+        printf("Monday\n");
+        break;
+    case 2:
+        printf("Tuesday\n");
+        break;
+    default:
+        printf("Other day\n");
+}</code></pre></div></div>
 
-    <p class="highlight">while</p>
+    <p class="highlight">Δομή επανάληψης</p>
+    <p>Η εντολή <code>while</code> στην C είναι μια δομή επανάληψης που εκτελεί ένα μπλοκ κώδικα επανειλημμένα όσο μια συνθήκη είναι αληθής. Χρησιμοποιείται όταν θέλουμε να επαναλάβουμε μια ενέργεια πολλές φορές, αλλά δεν γνωρίζουμε εκ των προτέρων τον αριθμό των επαναλήψεων.
+
+    </p>
     <div class="bg_preview">
     <div  class="line-numbers"><pre class="code_editor"><code class="language-c">int i = 1;
 while (i <= 5) {
 printf("%d\n", i);
 i++;
 }</code></pre></div></div>
-
-    <p class="highlight">for</p>
+    <p>Η εντολή <code>for</code> στην C είναι μια άλλη δομή επανάληψης, όπως η while, αλλά χρησιμοποιείται όταν γνωρίζουμε εκ των προτέρων τον αριθμό των επαναλήψεων που θέλουμε να εκτελέσει το πρόγραμμα. Η εντολή for είναι ιδιαίτερα χρήσιμη για βρόχους που αφορούν μετρημένες επαναλήψεις και προσφέρει μια πιο συμπυκνωμένη σύνταξη.</p>
     <div class="bg_preview">
     <div  class="line-numbers"><pre class="code_editor"><code class="language-c">for (int j = 0; j < 3; j++) {
 printf("Επανάληψη %d\n", j);
 }</code></pre></div></div>
 
 
-    <p class="highlight">switch</p>
-    <div class="bg_preview">
-    <div  class="line-numbers"><pre class="code_editor"><code class="language-c">int day = 3;
-switch (day) {
-case 1:
-printf("Monday\n");
-break;
-case 2:
-printf("Tuesday\n");
-break;
-default:
-printf("Other day\n");
-}</code></pre></div></div>
-
-
     <p class="highlight">Συναρτήσεις</p>
+    <p>Στη γλώσσα προγραμματισμού C, τα <code>functions</code> είναι τμήματα κώδικα που εκτελούν μια συγκεκριμένη εργασία. Επιτρέπουν την οργάνωση του κώδικα σε μικρότερα, διαχειρίσιμα κομμάτια, προάγοντας την επαναχρησιμοποίηση του κώδικα και την ευκολία συντήρησης.</p>
     <div class="bg_preview">
     <div  class="line-numbers"><pre class="code_editor"><code class="language-c">int add(int a, int b) {
 return a + b;
 }</code></pre></div></div>
 
     <p class="highlight">Δείκτες</p>
+    <p>Οι <code>pointers</code> στην C είναι μια από τις πιο ισχυρές και χαρακτηριστικές έννοιες της γλώσσας. Ένας δείκτης είναι μια μεταβλητή που αποθηκεύει τη διεύθυνση μνήμης μιας άλλης μεταβλητής. Με τους δείκτες μπορούμε να έχουμε άμεση πρόσβαση στη μνήμη και να διαχειριζόμαστε δεδομένα με πολύ ευέλικτο και αποτελεσματικό τρόπο.
+
+    </p>
     <div class="bg_preview">
     <div  class="line-numbers"><pre class="code_editor"><code class="language-c">int number = 42;
 int *ptr = &number;
