@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="https://grcodeclub.github.io/files-page/preview/programming/c.png"/>
+    <meta property="og:title" content="Γλώσσα Προγραμματισμού C | Δομή επανάληψης">
+    <title>GrCode Club</title>
+    <script src="https://grcodeclub.gr/js/data.js"></script>
+</head>
+<body>
+    <div id="addHeader"></div>
+    <div class="container">
+        <h1 class="title">Δομή επανάληψης</h1>
+        <p>Η εντολή <code>while</code> στην C είναι μια δομή επανάληψης που εκτελεί ένα μπλοκ κώδικα επανειλημμένα όσο μια συνθήκη είναι αληθής. Χρησιμοποιείται όταν θέλουμε να επαναλάβουμε μια ενέργεια πολλές φορές, αλλά δεν γνωρίζουμε εκ των προτέρων τον αριθμό των επαναλήψεων.</p>
+        <div class="bg_preview"><div class="line-numbers"><pre class="code_editor"><code class="language-c">int i = 1;
+while (i <= 5) {
+    printf("%d\n", i);
+    i++;
+}</code></pre></div></div>
+        <p>Η εντολή <code>for</code> στην C είναι μια άλλη δομή επανάληψης, όπως η while, αλλά χρησιμοποιείται όταν γνωρίζουμε εκ των προτέρων τον αριθμό των επαναλήψεων που θέλουμε να εκτελέσει το πρόγραμμα. Η εντολή for είναι ιδιαίτερα χρήσιμη για βρόχους που αφορούν μετρημένες επαναλήψεις και προσφέρει μια πιο συμπυκνωμένη σύνταξη.</p>
+        <div class="bg_preview"><div  class="line-numbers"><pre class="code_editor"><code class="language-c">for (int j = 0; j < 3; j++) {
+    printf("Επανάληψη %d\n", j);
+ }</code></pre></div></div>
+    
+    </div>
+    <div id="addFooter"></div>
+</body>
+</html>
